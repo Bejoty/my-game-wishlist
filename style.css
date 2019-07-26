@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+  --primary-color: #229999;
+  --primary-hover-color: #22aaaa;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --error-color: #cc3344;
+  --error-hover-color: #dd4444;
+  --success-color: #22bb44;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utilities */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  border: transparent;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover-color);
+}
+
+.btn-delete {
+  background: var(--error-color);
+  color: white;
+  margin: 0.5rem;
+  width: 40px;
+  border-radius: 4px;
+}
+
+.btn-delete:hover {
+  background: var(--error-hover-color);
+}
+
+/* Alerts */
+
+.alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.alert-success {
+  background: var(--success-color);
+  color: white;
+}
+
+.alert-error {
+  background: var(--error-color);
+  color: white;
+}
+
+/* Forms */
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input[type='text'] {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--dark-color);
+}
+
+/* Tables */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 0.25rem 0;
+  text-align: inherit;
+  border-top: 1px solid var(--dark-color);
+  border-bottom: 2px solid var(--dark-color);
+}
