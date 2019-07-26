@@ -1,4 +1,4 @@
-# My Games Wishlist
+# My Game Wishlist
 
 An interactive website created with core web languages (HTML, CSS, and JavaScript) to process and store user input.
 
